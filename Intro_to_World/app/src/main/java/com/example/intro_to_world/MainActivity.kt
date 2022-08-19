@@ -34,6 +34,10 @@ class MainActivity : AppCompatActivity() {
             findViewById<TextView>(R.id.textView).setTextColor(getResources().getColor(R.color.gold))
             }
 
+            findViewById<Button>(R.id.button2).setOnClickListener {
+                Log.i("Rahma", "Changed background view")
+                findViewById<View>(R.id.backgroundView).setBackgroundColor(R.color.blue_200)
+            }
         }
 
 
